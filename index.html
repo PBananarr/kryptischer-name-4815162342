@@ -629,7 +629,7 @@ a { color: inherit; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .detail-layout { grid-template-columns: 1fr; }
   .detail-media { position: static; order: -1; height: auto; min-height: 0; }
-  .detail-media img { height: auto; aspect-ratio: 4 / 3; }
+  .detail-media img { height: auto; aspect-ratio: 4 / 3; object-position: 50% 33%; }
   .invest-card { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-aside { position: static; }
@@ -705,13 +705,13 @@ const KONTAKT = {
 const BANNER_REIHE_A = [
   { img: 'saintsHero', titel: 'Saints Tattoo', url: 'saints-tattoo.de', tag: 'kunde' },
   { img: 'tanzHero', titel: 'Tanzstudio', url: 'Designkonzept', tag: 'konzept' },
-  { img: 'olafHero', titel: 'Olaf Schultz Consulting', url: 'Launchphase', tag: 'launch' },
+  { img: 'olafHero', titel: 'Olaf Schultz Consulting', url: 'schultz-ac.de', tag: 'kunde' },
   { img: 'beautyHero', titel: 'Beauty-Atelier', url: 'Designkonzept', tag: 'konzept' },
   { img: 'saintsGalerie', titel: 'Saints Tattoo – Galerie', url: 'saints-tattoo.de', tag: 'kunde' },
 ];
 const BANNER_REIHE_B = [
   { img: 'tanzKurse', titel: 'Tanzstudio – Kurse', url: 'Designkonzept', tag: 'konzept' },
-  { img: 'olafLeistungen', titel: 'Olaf Schultz – Leistungen', url: 'Launchphase', tag: 'launch' },
+  { img: 'olafLeistungen', titel: 'Olaf Schultz – Leistungen', url: 'schultz-ac.de', tag: 'kunde' },
   { img: 'beautyProducts', titel: 'Beauty-Atelier – Produkte', url: 'Designkonzept', tag: 'konzept' },
   { img: 'tanzBewertungen', titel: 'Tanzstudio – Stimmen', url: 'Designkonzept', tag: 'konzept' },
   { img: 'beautyContact', titel: 'Beauty-Atelier – Kontakt', url: 'Designkonzept', tag: 'konzept' },
@@ -750,13 +750,13 @@ const REFERENZEN = [
     id: 'olaf-schultz',
     kunde: 'Olaf Schultz – Automation Consulting',
     branche: 'IT-Beratung / Prozessautomatisierung',
-    status: 'Fertiggestellt – Domainwechsel folgt',
-    statusTag: 'launch',
-    statusLabel: 'Relaunch in der finalen Launchphase',
+    status: 'Online',
+    statusTag: 'kunde',
+    statusLabel: 'Kundenprojekt · online',
     bildLg: 'olafHeroLg',
     bildKlein: 'olafLeistungen',
-    link: 'https://pierrebretschneider-webdesign-kundenprojekte.de/',
-    kurz: 'Ein klarer B2B-Auftritt für einen Automatisierungs-Spezialisten – fertig gebaut, der Umzug auf die finale Domain steht bevor.',
+    link: 'https://schultz-ac.de/',
+    kurz: 'Ein klarer B2B-Auftritt für einen Automatisierungs-Spezialisten – von der Analyse bis zum Launch umgesetzt.',
     ausgangslage: 'Ein selbstständiger Berater mit langjähriger Spezialisierung auf Nintex-K2-Plattformen brauchte einen Auftritt, der seine Expertise für Unternehmenskunden sichtbar macht.',
     ziel: 'Eine Website, die komplexe Beratungsleistungen verständlich erklärt und Erstgespräche anbahnt – seriös, persönlich, ohne Konzern-Sprech.',
     ansatz: 'Persönliche Positionierung mit Portrait im Hero, klar gegliederte Leistungsbereiche und ein durchgängiger rot-orangefarbener Akzent für Handlungsaufforderungen. Struktur vor Effekt.',
@@ -1005,7 +1005,7 @@ function marquee() {
   <section class="marquee-section" aria-label="Projektbeispiele">
     <div class="container marquee-head reveal">
       <h2 style="font-size:var(--fs-h3);margin:0">Aus meiner Arbeit</h2>
-      <p class="muted" style="font-size:var(--fs-small)">Kundenprojekte, ein Relaunch in der Launchphase und eigene Designkonzepte.</p>
+      <p class="muted" style="font-size:var(--fs-small)">Kundenprojekte und eigene Designkonzepte.</p>
     </div>
     <div class="marquee" id="marquee">
       <div class="marquee-row marquee-row--a" data-speed="30">${rowA}</div>
