@@ -802,6 +802,13 @@ const REFERENZEN = [
     technik: 'WordPress mit Elementor Pro, saubere Seitenstruktur und technische SEO-Grundlagen mit Fokus auf die Kernbegriffe rund um Nintex K2, responsive Optimierung, Sicherheits- und Backup-Grundlagen.',
     leistungen: ['Beratung & Analyse', 'Seitenstruktur', 'Individuelles Design', 'WordPress & Elementor Pro', 'Responsive Optimierung', 'SEO-Grundlagen', 'Übergabe & Einweisung'],
     schwerpunkt: 'Konversion: Die Website ist als Anfrage-Kanal gebaut, nicht als Visitenkarte – Positionierung, Inhalte und Nutzerführung zielen durchgängig auf das Kontaktformular.',
+    /* Wortgetreuer Auszug aus einer Google-Rezension.
+       Freigabe ist über den Webdesignvertrag geregelt. */
+    zitat: {
+      text: 'Ich bin mit meiner neuen Webseite total glücklich! Pierre hat super-schnell, qualitativ hochwertig und professionell gearbeitet. Die Zusammenarbeit und Kommunikation war immer sehr angenehm und zielgerichtet.',
+      name: 'Olaf Schultz',
+      kontext: 'Automation Consulting · Auszug aus einer Google-Rezension',
+    },
   },
 ];
 
@@ -829,7 +836,7 @@ const REFERENZ_PROJEKTE = [
     titel: 'Olaf Schultz – Automation Consulting',
     tag: 'kunde',
     ziel: REF_OLAF.ziel,
-    zitatHinweis: 'Kundenstimme folgt.',
+    zitat: REF_OLAF.zitat,
     link: 'https://schultz-ac.de/',
     linkLabel: 'schultz-ac.de besuchen',
     galerie: ['galOlaf1', 'galOlaf2', 'galOlaf3', 'galOlaf4', 'galOlaf5'],
@@ -980,28 +987,28 @@ const LEISTUNG_DETAILS = [
    ------------------------------------------------------------ */
 const FAQ = [
   {
+    frage: 'Wie lange dauert ein Projekt?',
+    antwort: 'Die Dauer hängt vom Umfang der Website ab. Für eine komplette Website-Lösung sollten Sie in der Regel mit etwa 6 bis 12 Wochen rechnen. Ich arbeite strukturiert und mit klaren Projektphasen – so behalten wir jederzeit den Überblick über Fortschritt und Zeitplan.',
+  },
+  {
+    frage: 'Muss ich Inhalte selbst liefern?',
+    antwort: 'Texte und Bilder kommen grundsätzlich von Ihnen, da Sie Ihr Unternehmen und Ihre Leistungen am besten kennen. Ich unterstütze Sie dabei, Ihre Inhalte so aufzubereiten, dass sie zur Struktur, zum Design und zur gewünschten Wirkung passen. Auf Wunsch können zusätzlich lizenzierte Stockfotos eingebunden werden.',
+  },
+  {
+    frage: 'Kann ich meine Website später selbst bearbeiten?',
+    antwort: 'Ja. Ihre Website wird so aufgebaut, dass Sie Inhalte später selbst anpassen können. Den gewünschten Umfang der Bearbeitungsmöglichkeiten stimmen wir im Vorfeld gemeinsam ab. Nach Projektabschluss erhalten Sie eine saubere Übergabe.',
+  },
+  {
+    frage: 'Gibt es zusätzliche laufende Kosten?',
+    antwort: 'Während des Projekts entstehen nur dann zusätzliche Kosten, wenn sich der Leistungsumfang deutlich erweitert. Nach Fertigstellung besteht optional die Möglichkeit, einen Leistungs- und Wartungsvertrag für 20 € pro Monat hinzuzubuchen. Hierüber werden die laufend anfallenden Kosten für Lizenzen und Plugins, technische Services und Weiteres verrechnet. Den genauen Umfang besprechen wir transparent im Voraus.',
+  },
+  {
+    frage: 'Wie läuft das Erstgespräch ab?',
+    antwort: 'Das Erstgespräch findet in der Regel digital per Zoom statt – bei regionaler Nähe auch gerne vor Ort. Wir besprechen Ihr Vorhaben, klären offene Fragen und definieren gemeinsam den Rahmen des Projekts. Das Gespräch ist unverbindlich und dient ausschließlich der Orientierung – ohne Verkaufsdruck.',
+  },
+  {
     frage: 'Was kostet eine Website bei Ihnen?',
     antwort: 'Komplette Unternehmenswebsites starten ab 2.500 €. Der konkrete Preis hängt von Umfang, Seitenzahl, Inhalten und technischen Anforderungen ab. Nach dem Erstgespräch erhalten Sie ein individuelles Angebot – erst wenn Sie es annehmen, folgt der Webdesignvertrag.',
-  },
-  {
-    frage: 'Wie lange dauert ein Website-Projekt?',
-    antwort: 'Das hängt vom Umfang ab und davon, wie schnell Inhalte wie Texte und Bilder bereitstehen. Einen realistischen Zeitrahmen für Ihr Projekt nenne ich Ihnen im Erstgespräch – und halte Sie während des Projekts über den Stand auf dem Laufenden.',
-  },
-  {
-    frage: 'Muss ich die Texte und Bilder selbst liefern?',
-    antwort: 'Die Inhalte kommen in der Regel von Ihnen, denn niemand kennt Ihr Unternehmen besser. Ich unterstütze Sie aber bei Struktur und Aufbereitung und sage Ihnen genau, welche Inhalte gebraucht werden – Sie stehen damit nicht allein da.',
-  },
-  {
-    frage: 'Kann ich die Website später selbst pflegen?',
-    antwort: 'Ja. WordPress mit Elementor Pro ist dafür gut geeignet, und zur Übergabe gehört eine persönliche Einweisung. Wenn Sie sich nicht selbst kümmern möchten, können Sie alternativ einen Wartungsvertrag abschließen – das entscheiden Sie.',
-  },
-  {
-    frage: 'Was ist mit Plugin-Lizenzen, zum Beispiel für Elementor Pro?',
-    antwort: 'Beides ist möglich: Sie erwerben und verwalten die benötigten Lizenzen selbst, oder ich übernehme die Verwaltung im Rahmen eines Wartungsvertrags. Ich erkläre Ihnen vorab transparent, welche Lizenzen Ihr Projekt braucht und was sie kosten.',
-  },
-  {
-    frage: 'Arbeiten Sie nur regional in Bremervörde?',
-    antwort: 'Nein. Ich sitze in Bremervörde und bin dort auch persönlich erreichbar – zusammenarbeiten können wir aber deutschlandweit. Die meisten Abstimmungen laufen ohnehin per Telefon, Videocall oder WhatsApp.',
   },
   {
     frage: 'Garantieren Sie Top-Platzierungen bei Google?',
@@ -1048,7 +1055,7 @@ const META = {
   },
   '/referenzen': {
     title: 'Webdesign-Referenzen & Kundenprojekte | Pierre Bretschneider',
-    desc: 'Zwei ausführliche Fallstudien statt aufgeblähter Galerie: Saints Tattoo und Olaf Schultz Automation Consulting – mit Kontext, Entscheidungen und Umsetzung.',
+    desc: 'Kundenprojekte und eigene Designkonzepte im Detail – von Olaf Schultz Automation Consulting über Saints Tattoo bis zu Grace & Glow und Every Dance: Zielsetzung, Umsetzung und Ergebnis.',
   },
   '/kontakt': {
     title: 'Website-Projekt anfragen | Pierre Bretschneider Webdesign',
